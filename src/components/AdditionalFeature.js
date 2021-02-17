@@ -1,4 +1,7 @@
 import React from 'react';
+import { addFeatures } from '../Redux/actions'
+import { connect } from 'react-redux'
+
 
 const AdditionalFeature = props => {
   return (
@@ -8,6 +11,7 @@ const AdditionalFeature = props => {
       {props.feature.name} (+{props.feature.price})
     </li>
   );
-};
+}
+
 
 export default AdditionalFeature;
